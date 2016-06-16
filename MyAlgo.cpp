@@ -1,7 +1,6 @@
 #include "MyAlgo.h"
 #include <bitset>
 #include <cstdlib>
-//Ogrenci_No:030113003
 
 bool Algo1(unsigned short S, unsigned short L, unsigned short R, int Init, int * VL, int * VR)
 {
