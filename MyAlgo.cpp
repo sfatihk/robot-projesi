@@ -12,7 +12,7 @@ bool Algo2(unsigned short S, unsigned short L, unsigned short R, int Init, int *
   return Algo1(S, L, R, Init, VL, VR);
 }
 
-//SABIT ve STATIC degiskenlerin taninlanmasi
+ 
 float Kp=20,Ki=0.0000001,Kd=405;
 int ideal=8;
 float eski_hata=0,I=0;
@@ -51,12 +51,12 @@ bool Algo3(unsigned short S, unsigned short L, unsigned short R, int Init, int *
   }
 
   if(hata_dengesi < 0 ){
-    //sag tam guc,sol azaltilmis
+    
     *VR=MAX;
     *VL=MAX+hata_dengesi;
   }
   else{
-    //sol tamguc, sag azaltilmis
+    
     *VR=MAX-hata_dengesi;
     *VL=MAX;
   }
